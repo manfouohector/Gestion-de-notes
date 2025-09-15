@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../Ubuntu.ttf") format("truetype");
+}
+
+body {
+    font-family: "Ubuntu";
+}
+
+/* ============================= PAGE LOGIN ============================ */
+
+.loginConteneur {
+    width: 100vw;
+    height: 100vh;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginForm {
+    border-radius: 10px;
+    border-top: 10px solid red;
+    border-bottom: 10px solid blue;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    padding: 0px 50px 20px 50px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.loginConteneur a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#loginHome {
+    cursor: pointer;
+    color: black;
+}
+
+.loginInput {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100%;
+}
+
+#loginH1 {
+    font-size: 35px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.loginSpan {
+    font-size: 12px;
+}
+
+/* ========================== register ======================= */
+
+.registerConteneur {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerForm {
+    background-color: white;
+    border-radius: 10px;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+    border-bottom: 10px solid blue;
+    border-right: 10px solid blue;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    padding: 0px 50px 20px 50px;
+}
+
+/* ============================Dashboard================================ */
+
+.conteneurDash {
+    display: flex;
+}
+
+aside {
+    width: 400px;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding-top: 20px;
+}
+
+
+
+.reduce {
+    width: 100px;
+    overflow: hidden;
+}
+
+.inverse {
+    display: none;
+}
+
+.ic {
+    font-size: 35px;
+}
+
+
+
+
+hr {
+    border: 2px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+}
+
+#dashbtn {
+    background-color: blue;
+    border: none;
+}
+
+ul a {
+    color: black;
+}
+
+.active {
+    background-color: #2563eb;
+    height: 50px;
+    padding-top: 15px;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid black;
+}
+
+main header div {
+    width: 400px;
+    height: 50px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 50px;
+}
+
+main header input {
+    width: 90%;
+    height: 100%;
+    border:none;
+    outline: none;
+}
+
+.user {
+    font-size: 100px;
+    color: gray;
+}
+
+.dashContent {
+    margin-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.bloc {
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top: 15px;
+    animation: bloc 4s;
+}
+
+@keyframes bloc {
+    0%{width: 0px;}
+    100%{width: 250px;}
+}
+
+section div:nth-child(1) {
+    background-color: red;
+    color: white;
+}
+
+section div:nth-child(2) {
+    background-color: blue;
+    color: white;
+}
+
+section div:nth-child(3) {
+    background-color: violet;
+    color: white;
+}
+
+.dash div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash table {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.dash tr,td,th {
+    border: 2px solid black;
+}
+
+.dash h3 {
+    color: orange;
+    font-weight: 900;
+}
+
+#note_form {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: orange;
+    color: white;
+    font-weight: 900;
+}
+
+#dashbars {
+    cursor: pointer;
+}
+
+#search {
+    display: none;
+}
+
+.visi {
+    opacity:1;
+    animation: 2s translate forwards;
+}
+
+@keyframes translate {
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 60px;
+    }
+}
+
+.iconreduce {
+    font-size: 40px;
+}
+
+/* =========================================onload======================================== */
+.div {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    animation: 0.5s bounce infinite alternate-reverse;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.cont div:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.cont div:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+#dashbars2 {
+    display: none;
+}
+
+.voir {
+    display: block;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* =========================responsive=================================== */
+@media screen and (max-width:1100px) {
+    aside {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    main header {
+        width: 100%;
+    }
+
+    main header div {
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+    }
+
+
+    #search {
+        display: inline;
+        font-size: 35px;
+    }
+
+    aside {
+        width: 180px;
+    }
+
+    .dash h3 {
+        font-size: 15px;
+    }
+
+    .dash div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:450px) {
+    body {
+        font-size: 12px;
+    }
+    aside {
+        width: 100px;
+    }
+
+
+    main header div {
+        width: 300px;
+        height: 30px;
+    }
+
+    #iconadmin {
+        font-size: 35px;
+    }
+
+    .dash h3 , .dash button {
+        font-size: 12px;
+    }
+
+    .dash div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:380px) {
+    aside {
+        display: none;
+    }
+    #dashbars2 {
+        display: block;
+    }
+
+    #dashbars {
+        display: none;
+    }
+}
